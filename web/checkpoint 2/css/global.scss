@@ -146,7 +146,16 @@ ul {
 	.quarto-preco {
 		text-align: center;
 		font-weight: bold;
-		
+		.promo{
+			text-decoration: line-through;
+		}
+		.novo-valor{
+			color: red;
+		}
+		.comprar{
+			padding: 10px;
+			background-color: blue;
+		}
 		p :nth-child(n + 1) {
 			font-size: 2rem;
 		}
