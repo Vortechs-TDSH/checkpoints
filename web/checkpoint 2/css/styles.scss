@@ -1,0 +1,59 @@
+.quartos {
+	margin: 30px auto;
+	width: 50%;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-direction: column;
+
+	.title {
+		font-size: 1.5rem;
+		margin-bottom: 15px;
+	}
+
+	.container-quarto {
+		display: flex;
+		justify-content: space-between;
+		margin: 15px 0;
+		padding-bottom: 15px;
+		border-bottom: solid 1px;
+		flex-basis: 20%;
+
+		.quarto-image {
+			flex-basis: 25%;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.quarto-info {
+			display: flex;
+			flex-direction: column;
+			padding: 15px;
+			flex-basis: 60%;
+		}
+		.quarto-preco {
+			flex-basis: 20%;
+			text-align: center;
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			.promo {
+				text-decoration: line-through;
+			}
+			.novo-valor {
+				color: red;
+			}
+			.comprar {
+				padding: 10px;
+				background-color: rgba(148, 176, 218, 1);
+			}
+			p :nth-child(n + 1) {
+				font-size: 2rem;
+			}
+		}
+	}
+}
