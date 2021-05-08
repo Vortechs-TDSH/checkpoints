@@ -133,8 +133,10 @@ ul {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	margin: 15px 0;
+	padding-bottom: 15px;
+	border-bottom: solid 1px;
+
 	.quarto-info {
-		
 	}
 	.quarto-preco {
 		text-align: center;
