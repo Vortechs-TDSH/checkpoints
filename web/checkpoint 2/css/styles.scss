@@ -57,3 +57,37 @@
 		}
 	}
 }
+
+#servicos {
+	.container {
+		width: 65%;
+		margin: 30px auto;
+	}
+	.servico-info {
+		display: flex;
+		
+		margin: 15px 0;
+		.servico {
+			padding: 0 10px;
+			p {
+			 margin: 10px 0;
+			}
+			.detalhes {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 2;
+				ul {
+					padding-left: 15px;
+					li {
+						padding: 3px 0;
+					}
+				}
+				
+			
+			}
+		}
+	}
+
+
+
+}
