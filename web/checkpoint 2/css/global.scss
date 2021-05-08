@@ -135,12 +135,18 @@ ul {
 	margin: 15px 0;
 	padding-bottom: 15px;
 	border-bottom: solid 1px;
+	
 
 	.quarto-info {
+		text-decoration: dotted;
+		span{
+			background-image: url(../img/icon/check-icon.svg);
+		}
 	}
 	.quarto-preco {
 		text-align: center;
 		font-weight: bold;
+		
 		p :nth-child(n + 1) {
 			font-size: 2rem;
 		}
