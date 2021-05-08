@@ -95,7 +95,7 @@ h1 {
 	font-size: 1.875rem;
 }
 h2 {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 }
 h3 {
@@ -122,4 +122,25 @@ a {
 }
 ul {
 	list-style: none;
+}
+
+.container {
+	margin: 30px auto;
+	width: 50%;
+}
+
+.container-quarto {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	margin: 15px 0;
+	.quarto-info {
+		
+	}
+	.quarto-preco {
+		text-align: center;
+		font-weight: bold;
+		p :nth-child(n + 1) {
+			font-size: 2rem;
+		}
+	}
 }
