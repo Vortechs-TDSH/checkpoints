@@ -133,6 +133,9 @@ ul {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	margin: 65px 0 ;
+	img{
+		width: 300px;
+	}
 	padding-bottom: 15px;
 	border-bottom: solid 1px;
 	
