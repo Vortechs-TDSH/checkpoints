@@ -126,13 +126,13 @@ ul {
 
 .container {
 	margin: 30px auto;
-	width: 50%;
+	width: 65%;
 }
 
 .container-quarto {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	margin: 15px 0;
+	margin: 65px 0 ;
 	padding-bottom: 15px;
 	border-bottom: solid 1px;
 	
@@ -147,16 +147,17 @@ ul {
 		text-align: center;
 		font-weight: bold;
 		.promo{
+			margin-top: 6px;
 			text-decoration: line-through;
 		}
 		.novo-valor{
 			color: red;
 		}
 		.comprar{
-			margin-top: 10px;
+			margin-top: 6px;
 			padding: 20px;
-			background-color: var(--background-color);
-			border-radius: 4px;
+			background-color: rgba(201, 135, 29, 0.979);
+			border-radius: 8px;
 		}
 		.comprar:hover{
 			background-color: hsla(37, 75%, 45%, 0.753);
