@@ -153,8 +153,13 @@ ul {
 			color: red;
 		}
 		.comprar{
-			padding: 10px;
-			background-color: blue;
+			margin-top: 10px;
+			padding: 20px;
+			background-color: var(--background-color);
+			border-radius: 4px;
+		}
+		.comprar:hover{
+			background-color: hsla(37, 75%, 45%, 0.753);
 		}
 		p :nth-child(n + 1) {
 			font-size: 2rem;
