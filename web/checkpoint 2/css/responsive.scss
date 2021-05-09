@@ -1,0 +1,24 @@
+@media (max-width: 968px){
+    #galeria{
+        width: 80%;
+        margin: 0 auto;
+    .container-galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        .fotos{
+            padding: 10px;
+        }
+    }
+ }
+}
+
+@media (max-width: 1260px){
+    #galeria{
+        width: 70%;
+    
+     .container-galeria{
+        grid-template-columns: 1fr;
+        }
+    }
+}
