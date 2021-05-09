@@ -24,27 +24,10 @@
 			flex-basis: 30%;
 		}
 
-		.zoom{
-			overflow: hidden;
-		}
-
-		.zoom img{
-			width: 100%;
-			-moz-transition: all 0.3s;
-			-webkit-transition: all 0.3s;
-			transition: all 0.3s;
-		}
-
-		.zoom:hover img{
-			-moz-transform: scale(1.1);
-			-webkit-transform: scale(1.1);
-			transform: scale(1.1);
-		}
 		img {
 			width: 100%;
 		}
 		
-
 		.quarto-info {
 			display: flex;
 			flex-direction: column;
