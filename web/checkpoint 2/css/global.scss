@@ -9,7 +9,8 @@
 	--collored-background: #c9861d;
 	--text-yellow: #c9861d;
 	--header-border: #ebeff2;
-	--button-background: #e2644b;
+	--button-background: #f29d13;
+	--button-background-focus: #f2a813;
 }
 
 html {
@@ -122,4 +123,11 @@ a {
 }
 ul {
 	list-style: none;
+}
+
+.contained-button {
+	background-color: var(--button-background);
+	&:focus {
+		background-color: var(--button-background-focus);
+	}
 }
