@@ -5,13 +5,10 @@
 	align-items: stretch;
 	justify-content: center;
 	flex-direction: column;
-	
-
 	.title {
 		font-size: 1.8rem;
 		margin-bottom: 20px;
 	}
-
 	.container-quarto {
 		display: flex;
 		justify-content: space-between;
@@ -85,31 +82,67 @@
 }
 
 #servicos {
+	display: flex;
+	justify-content: center;
 	.container {
-		width: 65%;
-		margin: 30px auto;
+		max-width: 1280px;
+		margin: 30px;
 	}
 	.servico-info {
 		display: flex;
-		
-		margin: 15px 0;
-		.servico {
-			padding: 0 10px;
-			p {
-			 margin: 10px 0;
+		margin: 30px 0;
+		justify-content: space-between;
+		.container-img {
+			display: flex;
+			flex-basis: 65%;
+			img {
+				width: 100%;
 			}
-			.detalhes {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				grid-template-rows: 2;
-				ul {
-					padding-left: 15px;
-					li {
-						padding: 3px 0;
+		}
+		.servico {
+			display: flex;
+			flex-basis: 30%;
+			flex-direction: column;
+			.descricao {
+				margin: 15px 0;
+			}
+			.container-detalhes {
+				border: 2px solid black;
+				.container-preco {
+					display: flex;
+					justify-content: space-between;
+					h3, button {
+						display: flex;
+						flex-basis: 50%;					
+						justify-content: center;
+						align-items: center;
+						padding: 10px 0;
+					}
+					h3 {
+						border-bottom: 2px solid black;
+						border-right: 2px solid black;
+					}
+					button {
+						border-bottom: 2px solid black;
+						border-radius: 0;
 					}
 				}
-				
-			
+				.lista {
+					padding: 15px;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 1024px) {
+		:nth-child(even) {
+			flex-direction: column-reverse;
+		}
+		:nth-child(odd) {
+			flex-direction: column;
+		}
+		.servico-info {
+			.servico {
+				margin-top: 15px;
 			}
 		}
 	}
@@ -117,7 +150,7 @@
 
 
 
-#galeria{
+#galeria {
 	margin: 30px auto;
 	width: 65%;
 
@@ -138,23 +171,18 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		margin-bottom: 35px;
 		background-color: hsl(0, 5%, 92%);
-		.fotos{
+		.fotos {
 			position: relative;
 			padding: 20px;
 			overflow: hidden;
 
 			img{
 			width: 100%;
-			-moz-transition: all 0.5s;
-			-webkit-transition: all 0.5s;
 			transition: all 0.5s;
 			}
 		}
-
 		.fotos:hover img{
-			-moz-transform: scale(1.2);
- 			-webkit-transform: scale(1.2);
  			transform: scale(1.2);
-			}
+		}
 	}
 }
