@@ -40,3 +40,19 @@
         }
     }
 }
+
+@media (max-width:1260px){
+        #contato{
+        .container-contato{
+            margin: 0;
+            width: 100%;
+            .sub-title{
+                h2{
+                    font-size: 1.0rem;
+                }
+            }
+            }
+        }
+    }
+    
+

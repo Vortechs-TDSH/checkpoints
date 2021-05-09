@@ -108,3 +108,79 @@
 			}
 	}
 }
+
+	#contato{
+	width: 100%;
+	background: url('../img/bg-praia-ponte.jpg');
+	background-size: cover;
+	position:relative;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-direction: column;
+
+		.container-contato{
+		display: flex;
+		width: 45%;
+		flex-direction: column;
+		margin: 60px auto;
+		padding-bottom: 15px;
+		border-bottom: solid 1px;
+		background-color: rgba(255, 255, 255, 0.856);
+		border-top: #c9861d solid 6px;
+
+			.title{
+			margin: 30px auto 0;
+			font-size: small ;
+			font-weight: bold;
+			font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+			}
+			.sub-title{
+			margin: 30px auto;
+			font-size: 1.0rem;
+			}
+			.itens-contato{
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+				width: 75%;
+				.box-text{
+					border: solid 2px #885f1e;
+					border-radius: 5px;
+					height: 35px;
+					margin-bottom: 15px;
+					font-size: 15px;
+					outline: none;
+				}
+				.box-text:focus{
+					border-color: #f59700;
+					outline: none;
+				}
+				
+				#box-descricao{
+					border-radius: 5px;
+					border: solid 2px #885f1e;
+					font-size: 15px;
+					font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+					outline: none;
+				}
+				#box-descricao:focus{
+					border-color: #f59700;
+					outline: none;
+				}
+				.btn-enviar{
+					padding: 18px;
+					border-radius: 8px;
+					margin-top: 30px;
+					font-size: 18px;
+					background-color: #c9861d;
+				}
+				.btn-enviar:hover{
+					background-color: #e09318;
+				}
+			}
+		}
+		
+   } 
