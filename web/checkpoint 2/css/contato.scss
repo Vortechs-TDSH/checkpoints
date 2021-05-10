@@ -12,7 +12,7 @@
 		max-width: 600px;
 		flex-direction: column;
 		margin: 60px auto;
-		background-color: rgba(255, 255, 255, 0.856);
+		background-color: rgba(255, 255, 255, 0.85);
 		border-bottom: solid 1px;
 		padding: 25px;
 
@@ -34,40 +34,15 @@
 				width: 100%;
 			}
 
-			.box-text {
-				border: solid 2px #885f1e;
-				border-radius: 5px;
+			input {
 				height: 35px;
-				margin-bottom: 15px;
-				font-size: 15px;
-
-				&:focus {
-					border-color: #f59700;
-				}
 			}
 
-			#box-descricao {
-				border-radius: 5px;
-				border: solid 2px #885f1e;
-				font-size: 15px;
-				font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-
-				&:focus {
-					border-color: #f59700;
-				}
-			}
-
-			.btn-enviar {
+			.contained-button {
+				margin-top: 20px;
 				padding: 18px;
-				border-radius: 8px;
-				margin-top: 15px;
-				font-size: 18px;
-				background-color: #c9861d;
-				color: #fff;
-
-				&:hover {
-					background-color: #e09318;
-				}
+				width: 100%;
+				font-size: 1.125rem;
 			}
 		}
 	}
