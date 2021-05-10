@@ -137,19 +137,17 @@
 
 	.container-contato {
 		display: flex;
-		width: 45%;
+		width: 100%;
+		max-width: 600px;
 		flex-direction: column;
 		margin: 60px auto;
-		padding-bottom: 15px;
-		border-bottom: solid 1px;
 		background-color: rgba(255, 255, 255, 0.856);
-		border-top: #c9861d solid 6px;
+		border-bottom: solid 1px;
+		padding: 25px;
 
 		.title {
 			margin: 30px auto 0;
-			font-size: small;
 			font-weight: bold;
-			font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 		}
 		.sub-title {
 			margin: 30px auto;
@@ -158,18 +156,22 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			width: 100%;
+
+			label,
+			input,
+			textarea {
+				width: 100%;
+			}
+
 			.box-text {
 				border: solid 2px #885f1e;
 				border-radius: 5px;
 				height: 35px;
 				margin-bottom: 15px;
 				font-size: 15px;
-				outline: none;
 
 				&:focus {
 					border-color: #f59700;
-					outline: none;
 				}
 			}
 
@@ -178,20 +180,19 @@
 				border: solid 2px #885f1e;
 				font-size: 15px;
 				font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-				outline: none;
 
 				&:focus {
 					border-color: #f59700;
-					outline: none;
 				}
 			}
 
 			.btn-enviar {
 				padding: 18px;
 				border-radius: 8px;
-				margin-top: 30px;
+				margin-top: 15px;
 				font-size: 18px;
 				background-color: #c9861d;
+				color: #fff;
 
 				&:hover {
 					background-color: #e09318;
@@ -200,7 +201,7 @@
 		}
 	}
 
-	@media only screen and (max-width: 1268px) {
+	@media only screen and (max-width: 600px) {
 		justify-content: flex-start;
 		.container-contato {
 			margin: 0;
