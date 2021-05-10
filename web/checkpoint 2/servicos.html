@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-
-    
+    <link rel="stylesheet" href="css/servicos.css" />
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
   </head>
   <body>
@@ -26,15 +24,21 @@
           <img src="./img/icon/bxs-plane-land.svg" alt="icone">
           <h3>Re Pouse</h3>
         </a>
-        <div class="dropdown-menu">
-          <button type="menu"><i class='bx bx-menu'></i></button>
-          <nav class="menu-content">
+        <div class="menu">
+          <input type="checkbox" id="menu-toggle" style="display: none;" />
+          <label class="botao-toggle" for="menu-toggle">
+            <i class='bx bx-menu'></i>
+          </label>
+          <nav>
+            <label class="botao-toggle" for="menu-toggle">
+              <i class='bx bx-x'></i>
+            </label>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="quartos.html">Quartos</a></li>
               <li><a href="servicos.html">Serviços</a></li>
-              <li><a href="#">Galeria</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a href="contato.html">Contato</a></li>
             </ul>
           </nav>
         </div>
@@ -42,190 +46,191 @@
     </header>
 
     <main id="servicos">
-      <section class="container">
-          <h1>Confira nossos serviços</h1>
+      <div class="wrapper">
+        <div class="titulo">
+          <h2>Nossos serviços</h2>
           <p>
             Você está procurando surpreender alguém especial com uma escapada romântica ou deseja desfrutar de um banquete gastronômico 
-            até o pôr do sol, talvez queira relaxar enquanto desfruta de um incrível passeio de bicicleta pelas dunas? Agora estamos oferecendo 
-            5 arranjos especiais que levam o lazer a um outro nível.
+            até o pôr do sol? Agora estamos oferecendo 5 arranjos especiais que levam o lazer a um outro nível.
           </p>
-          
-          <div class="servico-info">
-            <div class="container-img">
-              <img src="img/culinaria.jpg" alt="imagem culinaria"/>
+        </div>
+        
+        <div class="servico-info">
+          <div class="container-img">
+            <img src="img/culinaria.jpg" alt="imagem culinaria"/>
+          </div>
+            <div class="servico">
+              <h2>Experiência Gastrônomica</h2>
+              <p class="descricao">
+                Três dias de delícia gastronômica. Fique num dos nossos quartos Deluxe (com vista para o mar) e delicie-se com um jantar especial de 3 pratos e um 'Almoço do Chef' de 2 pratos na praia.
+              </p>
+              <div class="container-detalhes">
+                <div class="container-preco">
+                  <h3>por R$499,00</h3>
+                  <button class="contained-button">Reserve agora</button>
+                </div>
+                <ul class="lista">
+                    <li><i class='bx bx-check'></i>&nbsp;2 noites de estadia para dois em um dos nossos quartos Deluxe</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Boas-vindas calorosas com uma bebida gratuita</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Check in a partir das 15h - Check out 12h</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Menu de jantar de 3 pratos no Re Pouse</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Menu de almoço de dois pratos no clube de praia Bries (meados de março a meados de outubro) ou no Re Pouse</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Acesso ao Centro de Bem-Estar</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Café da Manhã de Cortesia para Dois</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Wifi grátis</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Vista para o mar</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Máquina de espresso</li>
+                    <li><i class='bx bx-check'></i>&nbsp;Utilização gratuita da licença de estacionamento</li>
+                </ul>
+              </div>
             </div>
-              <div class="servico">
-                <h2>Experiência Gastrônomica</h2>
-                <p class="descricao">
-                  Três dias de delícia gastronômica. Fique num dos nossos quartos Deluxe (com vista para o mar) e delicie-se com um jantar especial de 3 pratos e um 'Almoço do Chef' de 2 pratos na praia.
-                </p>
-                <div class="container-detalhes">
-                  <div class="container-preco">
-                    <h3>por R$499,00</h3>
-                    <button class="contained-button">Reserve agora</button>
-                  </div>
-                  <ul class="lista">
-                      <li><i class='bx bx-check'></i>&nbsp;2 noites de estadia para dois em um dos nossos quartos Deluxe</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Boas-vindas calorosas com uma bebida gratuita</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Check in a partir das 15h - Check out 12h</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Menu de jantar de 3 pratos no Re Pouse</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Menu de almoço de dois pratos no clube de praia Bries (meados de março a meados de outubro) ou no Re Pouse</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Acesso ao Centro de Bem-Estar</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Café da Manhã de Cortesia para Dois</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Wifi grátis</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Vista para o mar</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Máquina de espresso</li>
-                      <li><i class='bx bx-check'></i>&nbsp;Utilização gratuita da licença de estacionamento</li>
-                  </ul>
-                </div>
-              </div>
-          </div>
+        </div>
 
-          <div class="servico-info">
-              <div class="servico">
-                <h2>Escapada romântica</h2>
-                <p class="descricao">
-                  Procurando algum tempo de qualidade com alguém? Com este pacote romântico, você passará uma noite cheia de romance em um de nossos quartos Deluxe com vista para o mar. Seu quarto será complementado com uma garrafa de champanhe e uma seleção de chocolates finos e frutas afrodisíacas.
-                </p>
-                <div class="container-detalhes">
-                  <div class="container-preco">
-                    <h3>por R$1.299,00</h3>
-                    <button class="contained-button">Reserve agora</button>
-                  </div>
-                  <ul class="lista">
-                    <li><i class="bx bx-check"></i>1 noite de estadia para dois em um dos nossos quartos Deluxe</li>
-                    <li><i class="bx bx-check"></i>Boas-vindas calorosas com uma bebida gratuita</li>
-                    <li><i class="bx bx-check"></i>Check in a partir das 15h - Check out 12h</li>
-                    <li><i class="bx bx-check"></i>1 garrafa de champanhe no seu quarto</li>
-                    <li><i class="bx bx-check"></i>Uma caixa cheia de chocolates para saborear</li>
-                    <li><i class="bx bx-check"></i>Uma caixa de frutas afrodisíacas orgânicas</li>
-                    <li><i class="bx bx-check"></i>Acesso ao Centro de Bem-Estar</li>
-                    <li><i class="bx bx-check"></i>Café da Manhã de Cortesia para Dois</li>
-                    <li><i class="bx bx-check"></i>Vista para o mar</li>
-                    <li><i class="bx bx-check"></i>Utilização gratuita da licença de estacionamento</li>
-                    <li><i class="bx bx-check"></i>Boas-vindas com café / chá e algo doce</li>
-                    <li><i class="bx bx-check"></i>Massagem nas costas, pescoço e ombro</li>
-                  </ul>
+        <div class="servico-info">
+            <div class="servico">
+              <h2>Escapada romântica</h2>
+              <p class="descricao">
+                Procurando algum tempo de qualidade com alguém? Com este pacote romântico, você passará uma noite cheia de romance em um de nossos quartos Deluxe com vista para o mar. Seu quarto será complementado com uma garrafa de champanhe e uma seleção de chocolates finos e frutas afrodisíacas.
+              </p>
+              <div class="container-detalhes">
+                <div class="container-preco">
+                  <h3>por R$1.299,00</h3>
+                  <button class="contained-button">Reserve agora</button>
                 </div>
+                <ul class="lista">
+                  <li><i class="bx bx-check"></i>1 noite de estadia para dois em um dos nossos quartos Deluxe</li>
+                  <li><i class="bx bx-check"></i>Boas-vindas calorosas com uma bebida gratuita</li>
+                  <li><i class="bx bx-check"></i>Check in a partir das 15h - Check out 12h</li>
+                  <li><i class="bx bx-check"></i>1 garrafa de champanhe no seu quarto</li>
+                  <li><i class="bx bx-check"></i>Uma caixa cheia de chocolates para saborear</li>
+                  <li><i class="bx bx-check"></i>Uma caixa de frutas afrodisíacas orgânicas</li>
+                  <li><i class="bx bx-check"></i>Acesso ao Centro de Bem-Estar</li>
+                  <li><i class="bx bx-check"></i>Café da Manhã de Cortesia para Dois</li>
+                  <li><i class="bx bx-check"></i>Vista para o mar</li>
+                  <li><i class="bx bx-check"></i>Utilização gratuita da licença de estacionamento</li>
+                  <li><i class="bx bx-check"></i>Boas-vindas com café / chá e algo doce</li>
+                  <li><i class="bx bx-check"></i>Massagem nas costas, pescoço e ombro</li>
+                </ul>
               </div>
-              <div class="container-img">
-                <img src="img/escapada-romantica.jpg" alt="imagem culinaria"/>
-              </div>
-          </div>
-
-          <div class="servico-info">
-            <div class="container-img">
-              <img src="img/noite-de-nupcias.jpg" alt="imagem culinaria"/>
             </div>
-              <div class="servico">
-                <h2>Noite de Núpcias</h2>
-                <p class="descricao">
-                  Se você gostaria de comemorar a melhor noite de sua vida, 
-                  nós garantiremos que você não se esqueça de sua estadia. Fique em um de nossos quartos luxuosos com varanda privativa, 
-                  complementado com uma garrafa de champanhe e uma seleção de chocolates finos. Mime-se à beira-mar com o pacote 'Bem-estar no Mar'.
-                </p>
-                <div class="container-detalhes">
-                  <div class="container-preco">
-                    <h3>por R$1.999,00</h3>
-                    <button class="contained-button">Reserve agora</button>
-                  </div>
-                  <ul class="lista">
-                    <li><i class="bx bx-check"></i>Estadia de 1 noite para dois em um dos nossos quartos Deluxe com varanda</li>
-                    <li><i class="bx bx-check"></i>Boas-vindas calorosas com uma bebida gratuita</li>
-                    <li><i class="bx bx-check"></i>Check in a partir das 15h - Check out 12h</li>
-                    <li><i class="bx bx-check"></i>1 garrafa de champanhe no seu quarto</li>
-                    <li><i class="bx bx-check"></i>Uma caixa cheia de chocolates para saborear</li>
-                    <li><i class="bx bx-check"></i>Acesso ao Centro de Bem-Estar Azzurro</li>
-                    <li><i class="bx bx-check"></i>Café da Manhã de Cortesia para Dois</li>
-                    <li><i class="bx bx-check"></i>Wifi grátis</li>
-                    <li><i class="bx bx-check"></i>Vista para o mar e varanda</li>
-                    <li><i class="bx bx-check"></i>Máquina de espresso</li>
-                    <li><i class="bx bx-check"></i>Utilização gratuita da licença de estacionamento</li>
-                    <li><i class="bx bx-check"></i>Bem-estar no Mar para Dois na Azzurro Beauty (90 min):</li>
-                    <li><i class="bx bx-check"></i>Boas-vindas com café / chá e algo doce</li>
-                    <li><i class="bx bx-check"></i>Tratamento facial relaxante</li>
-                    <li><i class="bx bx-check"></i>Mensagem de couro cabeludo indiano</li>
-                    <li><i class="bx bx-check"></i>Esfregaço nas costas</li>
-                    <li><i class="bx bx-check"></i>Embalagem corporal</li>
-                  </ul>
-                </div>
-              </div>
-          </div>
-
-          <div class="servico-info">
-              <div class="servico">
-                <h2>Explore</h2>
-                <p class="descricao">
-                  Se preferir uma estadia mais ativa, este pacote é o ideal para você! Pegue a estrada com duas bicicletas (elétricas) e um mapa de rotas e explore os belos arredores de Ilha Bela em dois dias. Depois de algumas horas esportivas, você terá tempo para relaxar no spa ou em seu quarto luxuoso com vista para o mar, uma máquina de café expresso e uma cama feita à mão.
-                </p>
-                <div class="container-detalhes">
-                  <div class="container-preco">
-                    <h3>por R$749,00</h3>
-                    <button class="contained-button">Reserve agora</button>
-                  </div>
-                  <ul class="lista">
-                    <li><i class="bx bx-check"></i>2 noites de estadia para dois em um dos nossos quartos Deluxe</li>
-                    <li><i class="bx bx-check"></i>Boas-vindas calorosas com uma bebida gratuita</li>
-                    <li><i class="bx bx-check"></i>Check in a partir das 15h - Check out 12h</li>
-                    <li><i class="bx bx-check"></i>2 bicicletas por dois dias + mapa da rota</li>
-                    <li><i class="bx bx-check"></i>Acesso ao Centro de Bem-Estar Azzurro</li>
-                    <li><i class="bx bx-check"></i>Café da Manhã de Cortesia para Dois</li>
-                    <li><i class="bx bx-check"></i>Wifi grátis</li>
-                    <li><i class="bx bx-check"></i>Vista para o mar</li>
-                    <li><i class="bx bx-check"></i>Máquina de espresso</li>
-                    <li><i class="bx bx-check"></i>Utilização gratuita da licença de estacionamento</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="container-img">
-                <img src="img/explore.jpg" alt="imagem culinaria"/>
-              </div>
-          </div>
-
-          <div class="servico-info">
             <div class="container-img">
-              <img src="img/farol.jpeg" alt="imagem culinaria"/>
+              <img src="img/escapada-romantica.jpg" alt="imagem culinaria"/>
             </div>
-              <div class="servico">
-                <h2>Cultura</h2>
-                <p class="descricao">
-                  A área ao redor do Re Pouse tem muito mais a oferecer do que uma bela praia extensa, o animado boulevard. 
-                  Com o pacote cultural você não só desfrutará de uma estadia de duas noites em um quarto Deluxe com café da manhã, 
-                  mas também terá acesso a um dos destaques culturais da região: Corpus (viagem através do corpo humano), ou o museu de 
-                  história natural Naturalis.
-                </p>
-                <div class="container-detalhes">
-                  <div class="container-preco">
-                    <h3>por R$599,00</h3>
-                    <button class="contained-button">Reserve agora</button>
-                  </div>
-                  <ul class="lista">
-                    <li><i class="bx bx-check"></i>2 noites de estadia para dois em um dos nossos quartos Deluxe</li>
-                    <li><i class="bx bx-check"></i>Boas-vindas calorosas com uma bebida gratuita</li>
-                    <li><i class="bx bx-check"></i>Check in a partir das 15h - Check out 12h</li>
-                    <li><i class="bx bx-check"></i>Escolha o seu bilhete para:</li>
-                    <li><i class="bx bx-check"></i>Keukenhof</li>
-                    <li><i class="bx bx-check"></i>Corpus</li>
-                    <li><i class="bx bx-check"></i>Naturalis</li>
-                    <li><i class="bx bx-check"></i>Acesso ao Centro de Bem-Estar Azzurro</li>
-                    <li><i class="bx bx-check"></i>Café da Manhã de Cortesia para Dois</li>
-                    <li><i class="bx bx-check"></i>Wifi grátis</li>
-                    <li><i class="bx bx-check"></i>Vista para o mar</li>
-                    <li><i class="bx bx-check"></i>Máquina de espresso</li>
-                    <li><i class="bx bx-check"></i>Utilização gratuita da licença de estacionamento</li>
-                    <li><i class="bx bx-check"></i>Menu de jantar surpreendente do Chef de 3 pratos no Re Pouse</li>
-                  </ul>
-                </div>
-              </div>
+        </div>
+
+        <div class="servico-info">
+          <div class="container-img">
+            <img src="img/noite-de-nupcias.jpg" alt="imagem culinaria"/>
           </div>
-      </section>
+          <div class="servico">
+            <h2>Noite de Núpcias</h2>
+            <p class="descricao">
+              Se você gostaria de comemorar a melhor noite de sua vida, 
+              nós garantiremos que você não se esqueça de sua estadia. Fique em um de nossos quartos luxuosos com varanda privativa, 
+              complementado com uma garrafa de champanhe e uma seleção de chocolates finos. Mime-se à beira-mar com o pacote 'Bem-estar no Mar'.
+            </p>
+            <div class="container-detalhes">
+              <div class="container-preco">
+                <h3>por R$1.999,00</h3>
+                <button class="contained-button">Reserve agora</button>
+              </div>
+              <ul class="lista">
+                <li><i class="bx bx-check"></i>Estadia de 1 noite para dois em um dos nossos quartos Deluxe com varanda</li>
+                <li><i class="bx bx-check"></i>Boas-vindas calorosas com uma bebida gratuita</li>
+                <li><i class="bx bx-check"></i>Check in a partir das 15h - Check out 12h</li>
+                <li><i class="bx bx-check"></i>1 garrafa de champanhe no seu quarto</li>
+                <li><i class="bx bx-check"></i>Uma caixa cheia de chocolates para saborear</li>
+                <li><i class="bx bx-check"></i>Acesso ao Centro de Bem-Estar Azzurro</li>
+                <li><i class="bx bx-check"></i>Café da Manhã de Cortesia para Dois</li>
+                <li><i class="bx bx-check"></i>Wifi grátis</li>
+                <li><i class="bx bx-check"></i>Vista para o mar e varanda</li>
+                <li><i class="bx bx-check"></i>Máquina de espresso</li>
+                <li><i class="bx bx-check"></i>Utilização gratuita da licença de estacionamento</li>
+                <li><i class="bx bx-check"></i>Bem-estar no Mar para Dois na Azzurro Beauty (90 min):</li>
+                <li><i class="bx bx-check"></i>Boas-vindas com café / chá e algo doce</li>
+                <li><i class="bx bx-check"></i>Tratamento facial relaxante</li>
+                <li><i class="bx bx-check"></i>Mensagem de couro cabeludo indiano</li>
+                <li><i class="bx bx-check"></i>Esfregaço nas costas</li>
+                <li><i class="bx bx-check"></i>Embalagem corporal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="servico-info">
+          <div class="servico">
+            <h2>Explore</h2>
+            <p class="descricao">
+              Se preferir uma estadia mais ativa, este pacote é o ideal para você! Pegue a estrada com duas bicicletas (elétricas) e um mapa de rotas e explore os belos arredores de Ilha Bela em dois dias. Depois de algumas horas esportivas, você terá tempo para relaxar no spa ou em seu quarto luxuoso com vista para o mar, uma máquina de café expresso e uma cama feita à mão.
+            </p>
+            <div class="container-detalhes">
+              <div class="container-preco">
+                <h3>por R$749,00</h3>
+                <button class="contained-button">Reserve agora</button>
+              </div>
+              <ul class="lista">
+                <li><i class="bx bx-check"></i>2 noites de estadia para dois em um dos nossos quartos Deluxe</li>
+                <li><i class="bx bx-check"></i>Boas-vindas calorosas com uma bebida gratuita</li>
+                <li><i class="bx bx-check"></i>Check in a partir das 15h - Check out 12h</li>
+                <li><i class="bx bx-check"></i>2 bicicletas por dois dias + mapa da rota</li>
+                <li><i class="bx bx-check"></i>Acesso ao Centro de Bem-Estar Azzurro</li>
+                <li><i class="bx bx-check"></i>Café da Manhã de Cortesia para Dois</li>
+                <li><i class="bx bx-check"></i>Wifi grátis</li>
+                <li><i class="bx bx-check"></i>Vista para o mar</li>
+                <li><i class="bx bx-check"></i>Máquina de espresso</li>
+                <li><i class="bx bx-check"></i>Utilização gratuita da licença de estacionamento</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-img">
+            <img src="img/explore.jpg" alt="imagem culinaria"/>
+          </div>
+        </div>
+
+        <div class="servico-info">
+          <div class="container-img">
+            <img src="img/farol.jpeg" alt="imagem culinaria"/>
+          </div>
+          <div class="servico">
+            <h2>Cultura</h2>
+            <p class="descricao">
+              A área ao redor do Re Pouse tem muito mais a oferecer do que uma bela praia extensa, o animado boulevard. 
+              Com o pacote cultural você não só desfrutará de uma estadia de duas noites em um quarto Deluxe com café da manhã, 
+              mas também terá acesso a um dos destaques culturais da região: Corpus (viagem através do corpo humano), ou o museu de 
+              história natural Naturalis.
+            </p>
+            <div class="container-detalhes">
+              <div class="container-preco">
+                <h3>por R$599,00</h3>
+                <button class="contained-button">Reserve agora</button>
+              </div>
+              <ul class="lista">
+                <li><i class="bx bx-check"></i>2 noites de estadia para dois em um dos nossos quartos Deluxe</li>
+                <li><i class="bx bx-check"></i>Boas-vindas calorosas com uma bebida gratuita</li>
+                <li><i class="bx bx-check"></i>Check in a partir das 15h - Check out 12h</li>
+                <li><i class="bx bx-check"></i>Escolha o seu bilhete para:</li>
+                <li><i class="bx bx-check"></i>Keukenhof</li>
+                <li><i class="bx bx-check"></i>Corpus</li>
+                <li><i class="bx bx-check"></i>Naturalis</li>
+                <li><i class="bx bx-check"></i>Acesso ao Centro de Bem-Estar Azzurro</li>
+                <li><i class="bx bx-check"></i>Café da Manhã de Cortesia para Dois</li>
+                <li><i class="bx bx-check"></i>Wifi grátis</li>
+                <li><i class="bx bx-check"></i>Vista para o mar</li>
+                <li><i class="bx bx-check"></i>Máquina de espresso</li>
+                <li><i class="bx bx-check"></i>Utilização gratuita da licença de estacionamento</li>
+                <li><i class="bx bx-check"></i>Menu de jantar surpreendente do Chef de 3 pratos no Re Pouse</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="footer-content">
         <p>
-          <strong>Endereço:</strong> Av. Paulista, 1106 - 7º andar
-        </p>  
+          <strong>Endereço:</strong> R. Antenor Custódio da Silva, 80 - Cocaia, Ilhabela - SP, 11630-000
+        </p>
         <p>
           <strong>Telefone:</strong> (11) 9999-9999 &nbsp;
           <strong>Celular:</strong> (11) 9 9999-9999

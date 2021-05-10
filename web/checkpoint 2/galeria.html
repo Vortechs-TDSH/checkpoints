@@ -15,167 +15,112 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/galeria.css" />
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-content">
-            <a class="logo" href="/">
-                <img src="./img/icon/bxs-plane-land.svg" alt="icone">
-                <h3>Re Pouse</h3>
-            </a>
-            <div class="dropdown-menu">
-                <button type="menu"><i class='bx bx-menu'></i></button>
-                <nav class="menu-content">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="quartos.html">Quartos</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main id="galeria">
-        <div class="title">
-            <h2>Galeria:</h2>
-        </div>
-        <h3 class="suite">Suíte Bangalô Beach:</h3>
-        <div class="container-galeria">
-            
-            <div class="fotos"> 
-                <img src="./img/bangalo1.jpg" alt="bangalo1">
-            </div>
-
-            <div class="fotos">
-                <img src="./img/bangalo2.jpg" alt="bangalo2">
-            </div>
-
-            <div class="fotos">
-                <img src="./img/bangalo3.jpg" alt="bangalo3">
-            </div>
-        </div>
-        <h3 class="suite">Suíte Imperial:</h3>
-        <div class="container-galeria">
-        
-            <div class="fotos">
-                <img src="./img/Imperial1.jpg" alt="bangalo1">
-            </div>
-        
-            <div class="fotos">
-                <img src="./img/Imperial2.jpg" alt="bangalo2">
-            </div>
-        
-            <div class="fotos">
-                <img src="./img/Imperial3.jpg" alt="bangalo3">
-            </div>
-        </div>
-        <h3 class="suite">Suíte Master Gourmet:</h3>
-            <div class="container-galeria">
-        
-                <div class="fotos">
-                    <img src="./img/gourmet1.jpg" alt="bangalo1">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/gourmet2.jpg" alt="bangalo2">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/gourmet3.jpg" alt="bangalo3">
-                </div>
-            </div>
-        <h3 class="suite">Suíte 5 Estrelas:</h3>
-            <div class="container-galeria">
-        
-                <div class="fotos ">
-                    <img src="./img/estrelas1.jpg" alt="bangalo1">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/estrelas2.jpg" alt="bangalo2">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/estrelas3.jpg" alt="bangalo3">
-                </div>
-            </div>
-        <h3 class="suite">Suíte Presidencial:</h3>
-            <div class="container-galeria">
-        
-                <div class="fotos">
-                    <img src="./img/presidencial1.jpg" alt="bangalo1">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/presidencial2.jpg" alt="bangalo2">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/presidencial3.jpg" alt="bangalo3">
-                </div>
-            </div>
-        <h3 class="suite">Outros:</h3>
-        <div class="container-galeria">
-        
-            <div class="fotos ">
-                <img src="./img/piscina-grande.jpg" alt="bangalo1">
-            </div>
-        
-            <div class="fotos">
-                <img src="./img/piscina.jpg" alt="bangalo2">
-            </div>
-        
-            <div class="fotos">
-                <img src="./img/praia.jpg" alt="bangalo3">
-            </div>
-            <div class="fotos ">
-                <img src="./img/private-room.jpg" alt="bangalo1">
-            </div>
-        
-            <div class="fotos">
-                <img src="./img/bar.jpg" alt="bangalo2">
-            </div>
-        
-            <div class="fotos">
-                <img src="./img/praca.jpg" alt="bangalo3">
-            </div>
-        </div>
-        
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>
-                <strong>Endereço:</strong> Av. Paulista, 1106 - 7º andar
-            </p>
-            <p>
-                <strong>Telefone:</strong> (11) 9999-9999 &nbsp;
-                <strong>Celular:</strong> (11) 9 9999-9999
-            </p>
-            <p>
-                <strong>Email:</strong> <a href="mailto:fiap@hotmail.com">fiap@hotmail.com</a>
-            </p>
-            <nav class="social-container">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-                <a href="#">
-                    <i class='bx bxl-twitter'></i>
-                </a>
-            </nav>
-        </div>
-        <div class="copyright-container">
-            <p>Feito pela equipe Vortechs com ❤️ © 2021</p>
-        </div>
-    </footer>
+	<header class="header">
+		<div class="header-content">
+			<a class="logo" href="/">
+				<h3>Re Pouse</h3>
+			</a>
+			<div class="menu">
+				<input type="checkbox" id="menu-toggle" style="display: none;" />
+				<label class="botao-toggle" for="menu-toggle">
+					<i class='bx bx-menu'></i>
+				</label>
+				<nav>
+					<label class="botao-toggle" for="menu-toggle">
+						<i class='bx bx-x'></i>
+					</label>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="quartos.html">Quartos</a></li>
+						<li><a href="servicos.html">Serviços</a></li>
+						<li><a href="galeria.html">Galeria</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<main id="galeria">
+		<div class="wrapper">
+			<div class="titulo">
+				<h2>Galeria</h2>
+				<p>Tenha um deslumbre de nossa doce e prazerosa localização com o melhor que há para seu conforto</p>
+			</div>
+			<div class="container-galeria">
+				<h3 class="galeria-titulo">Suíte Bangalô Beach:</h3>
+				<div class="container-fotos">
+					<img src="./img/bangalo1.jpg" alt="bangalo1" class="foto"/>
+					<img src="./img/bangalo2.jpg" alt="bangalo2" class="foto"/>
+					<img src="./img/bangalo3.jpg" alt="bangalo3" class="foto"/>
+				</div>
+			</div>
+			<div class="container-galeria">
+				<h3 class="galeria-titulo">Suíte Imperial:</h3>
+				<div class="container-fotos">
+					<img src="./img/Imperial1.jpg" alt="imperial1" class="foto"/>
+					<img src="./img/Imperial2.jpg" alt="imperial2" class="foto"/>
+					<img src="./img/Imperial3.jpg" alt="imperial3" class="foto"/>
+				</div>
+			</div>
+			<div class="container-galeria">
+				<h3 class="galeria-titulo">Suíte Master Gourmet:</h3>
+				<div class="container-fotos">
+					<img src="./img/gourmet1.jpg" alt="gourmet1" class="foto"/>
+					<img src="./img/gourmet2.jpg" alt="gourmet2" class="foto"/>
+					<img src="./img/gourmet3.jpg" alt="gourmet3" class="foto"/>
+				</div>
+			</div>
+			<div class="container-galeria">
+				<h3 class="galeria-titulo">Suíte 5 Estrelas:</h3>
+				<div class="container-fotos">
+					<img src="./img/estrelas1.jpg" alt="estrelas1" class="foto"/>
+					<img src="./img/estrelas2.jpg" alt="estrelas2" class="foto"/>
+					<img src="./img/estrelas3.jpg" alt="estrelas3" class="foto"/>
+				</div>
+			</div>
+			<div class="container-galeria">
+				<h3 class="galeria-titulo">Suíte Presidencial:</h3>
+				<div class="container-fotos">
+					<img src="./img/presidencial1.jpg" alt="presidencial1" class="foto"/>
+					<img src="./img/presidencial2.jpg" alt="presidencial2" class="foto"/>
+					<img src="./img/presidencial3.jpg" alt="presidencial3" class="foto"/>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer-content">
+			<p>
+				<strong>Endereço:</strong> R. Antenor Custódio da Silva, 80 - Cocaia, Ilhabela - SP, 11630-000
+			</p>
+			<p>
+				<strong>Telefone:</strong> (11) 9999-9999 &nbsp;
+				<strong>Celular:</strong> (11) 9 9999-9999
+			</p>
+			<p>
+				<strong>Email:</strong> <a href="mailto:fiap@hotmail.com">fiap@hotmail.com</a>
+			</p>
+			<nav class="social-container">
+				<a href="#"><i class='bx bxl-facebook-circle'></i></a>
+				<a href="#">
+					<i class='bx bxl-instagram'></i>
+				</a>
+				<a href="#">
+					<i class='bx bxl-twitter'></i>
+				</a>
+			</nav>
+		</div>
+		<div class="copyright-container">
+			<p>Feito pela equipe Vortechs com ❤️ © 2021</p>
+		</div>
+	</footer>
 </body>
 
 </html>
