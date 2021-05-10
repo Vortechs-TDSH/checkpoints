@@ -154,13 +154,14 @@ main {
 
 		.titulo {
 			font-weight: 600;
-			color: var(--titulo-color);
+			color: #727ff9;
 		}
 
 		p {
 			margin: 15px 0;
 			font-size: 1rem;
 			font-weight: 500;
+			color: var(--text-color);
 		}
 
 		@media only screen and (max-width: 600px) {
