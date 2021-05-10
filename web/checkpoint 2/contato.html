@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
@@ -40,90 +39,31 @@
             </div>
         </div>
     </header>
-
-    <main id="galeria">
-        <div class="title">
-            <h2>Galeria:</h2>
+    <main id="contato">
+        <div class="container-contato">
+            <h1 class="title">Contato</h1>
+            <h2 class="sub-title">Conte-nos sobre suas dúvidas.</h2>
+            <form class="formulario-contato">
+                <label>
+                    <h3>Nome:</h3>
+                    <input type="nome" placeholder=" Digite seu nome completo" class="box-text" required>
+                </label>
+                <label>
+                    <h3>E-mail:</h3>
+                    <input type="email" name="email" placeholder=" Digite seu e-mail" class="box-text" required>
+                </label>
+                <label>
+                    <h3>Motivo:</h3>
+                    <input type="text" name="motivo" placeholder=" Digite sua motivo" class="box-text" required>
+                </label>
+                <label>
+                    <h3>Mensagem:</h3>
+                    <textarea name="mensagem" placeholder=" Explique sua dúvida" id="box-descricao" cols="30" rows="15" required></textarea>
+                </label>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
         </div>
-        <h3 class="suite">Suíte Bangalô Beach:</h3>
-        <div class="container-galeria">
-            
-            <div class="fotos"> 
-                <img src="./img/bangalo1.jpg" alt="bangalo1">
-            </div>
-
-            <div class="fotos">
-                <img src="./img/bangalo2.jpg" alt="bangalo2">
-            </div>
-
-            <div class="fotos">
-                <img src="./img/bangalo3.jpg" alt="bangalo3">
-            </div>
-        </div>
-        <h3 class="suite">Suíte Imperial:</h3>
-        <div class="container-galeria">
-        
-            <div class="fotos">
-                <img src="./img/Imperial1.jpg" alt="bangalo1">
-            </div>
-        
-            <div class="fotos">
-                <img src="./img/Imperial2.jpg" alt="bangalo2">
-            </div>
-        
-            <div class="fotos">
-                <img src="./img/Imperial3.jpg" alt="bangalo3">
-            </div>
-        </div>
-        <h3 class="suite">Suíte Master Gourmet:</h3>
-            <div class="container-galeria">
-        
-                <div class="fotos">
-                    <img src="./img/gourmet1.jpg" alt="bangalo1">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/gourmet2.jpg" alt="bangalo2">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/gourmet3.jpg" alt="bangalo3">
-                </div>
-            </div>
-        <h3 class="suite">Suíte 5 Estrelas:</h3>
-            <div class="container-galeria">
-        
-                <div class="fotos ">
-                    <img src="./img/estrelas1.jpg" alt="bangalo1">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/estrelas2.jpg" alt="bangalo2">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/estrelas3.jpg" alt="bangalo3">
-                </div>
-            </div>
-        <h3 class="suite">Suíte Presidencial:</h3>
-            <div class="container-galeria">
-        
-                <div class="fotos">
-                    <img src="./img/presidencial1.jpg" alt="bangalo1">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/presidencial2.jpg" alt="bangalo2">
-                </div>
-        
-                <div class="fotos">
-                    <img src="./img/presidencial3.jpg" alt="bangalo3">
-                </div>
-            </div>
-
-        
     </main>
-
     <footer class="footer">
         <div class="footer-content">
             <p>
