@@ -1,0 +1,85 @@
+#contato {
+	width: 100%;
+	background: url("../img/bg-praia-ponte.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	.container-contato {
+		display: flex;
+		width: 100%;
+		max-width: 600px;
+		flex-direction: column;
+		margin: 60px auto;
+		background-color: rgba(255, 255, 255, 0.856);
+		border-bottom: solid 1px;
+		padding: 25px;
+
+		.title {
+			margin: 30px auto 0;
+			font-weight: bold;
+		}
+		.sub-title {
+			margin: 30px auto;
+		}
+		.formulario-contato {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			label,
+			input,
+			textarea {
+				width: 100%;
+			}
+
+			.box-text {
+				border: solid 2px #885f1e;
+				border-radius: 5px;
+				height: 35px;
+				margin-bottom: 15px;
+				font-size: 15px;
+
+				&:focus {
+					border-color: #f59700;
+				}
+			}
+
+			#box-descricao {
+				border-radius: 5px;
+				border: solid 2px #885f1e;
+				font-size: 15px;
+				font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+				&:focus {
+					border-color: #f59700;
+				}
+			}
+
+			.btn-enviar {
+				padding: 18px;
+				border-radius: 8px;
+				margin-top: 15px;
+				font-size: 18px;
+				background-color: #c9861d;
+				color: #fff;
+
+				&:hover {
+					background-color: #e09318;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		justify-content: flex-start;
+		.container-contato {
+			margin: 0;
+			width: 100%;
+			.sub-title h2 {
+				font-size: 1rem;
+			}
+		}
+	}
+}
