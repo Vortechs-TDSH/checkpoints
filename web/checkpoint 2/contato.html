@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
@@ -42,22 +41,26 @@
     </header>
     <main id="contato">
         <div class="container-contato">
-            <div class="title">
-                <h1>Contato</h1>
-            </div>
-            <div class="sub-title">
-                <h2>Conte-nos sobre suas dúvidas.</h2>
-            </div>
-            <form action="index.html" class="itens-contato">
-                    <h2>Nome:</h2>
+            <h1 class="title">Contato</h1>
+            <h2 class="sub-title">Conte-nos sobre suas dúvidas.</h2>
+            <form class="formulario-contato">
+                <label>
+                    <h3>Nome:</h3>
                     <input type="nome" placeholder=" Digite seu nome completo" class="box-text" required>
-                    <h2>E-mail:</h2>
+                </label>
+                <label>
+                    <h3>E-mail:</h3>
                     <input type="email" name="email" placeholder=" Digite seu e-mail" class="box-text" required>
-                    <h2>Motivo:</h2>
+                </label>
+                <label>
+                    <h3>Motivo:</h3>
                     <input type="text" name="motivo" placeholder=" Digite sua motivo" class="box-text" required>
-                    <h2>Mensagem:</h2>
+                </label>
+                <label>
+                    <h3>Mensagem:</h3>
                     <textarea name="mensagem" placeholder=" Explique sua dúvida" id="box-descricao" cols="30" rows="15" required></textarea>
-                    <button type="submit" class="btn-enviar contained-button">Enviar</button>
+                </label>
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </div>
     </main>
