@@ -1,4 +1,4 @@
-#quartos {
+.wrapper {
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
@@ -17,14 +17,15 @@
 			display: flex;
 			align-items: center;
 			flex-basis: 30%;
-		}
-
-		img {
-			width: 100%;
+			width: 220px;
 			transition: all 0.3s;
 
 			&:hover {
 				transform: scale(1.1);
+			}
+
+			@media only screen and (max-width: 600px) {
+				width: 100%;
 			}
 		}
 
@@ -54,17 +55,6 @@
 			}
 			.novo-valor {
 				color: red;
-			}
-			.comprar {
-				margin-top: 12px;
-				padding: 12px 16px;
-				background-color: #f29d13;
-				border-radius: 6px;
-				color: #fff;
-
-				&:active {
-					background-color: #f2a813;
-				}
 			}
 			p :nth-child(n + 1) {
 				font-size: 2rem;
