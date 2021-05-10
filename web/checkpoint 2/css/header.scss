@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	box-shadow: var(--shadow-1);
-
+	
 	.header-content {
 		padding: 15px 50px;
 		display: flex;
@@ -30,6 +30,7 @@
 			font-weight: 500;
 			color: var(--text-yellow);
 		}
+		
 	}
 
 	.dropdown-menu {
