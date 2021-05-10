@@ -27,6 +27,7 @@ html {
 * {
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 	scrollbar-color: rgba(1, 1, 1, 0.3);
 	scrollbar-width: 7px;
 	&::-webkit-scrollbar {
