@@ -2,16 +2,88 @@
 	display: flex;
 	justify-content: center;
 	box-shadow: var(--shadow-1);
+	position: sticky;
+	background-color: var(--background-color);
+	width: 100%;
+	top: 0;
+	z-index: auto;
 
 	.header-content {
-		padding: 15px 50px;
+		padding: 15px 35px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+
+		.menu {
+			.botao-toggle {
+				cursor: pointer;
+				color: #000;
+				font-size: 1.5rem;
+			}
+
+			nav {
+				background-color: rgba(0, 0, 0, 0.9);
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transform: translateX(-100%);
+				transition: transform 0.2s ease-in-out;
+
+				label {
+					align-self: flex-end;
+				}
+
+				ul {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					list-style-type: none;
+					transition: all 0.3s ease-in-out;
+					width: 100%;
+
+					li {
+						opacity: 0;
+						width: 100%;
+						text-align: center;
+						background-color: transparent;
+						transition: background 0.2s;
+
+						a {
+							padding: 15px 0;
+							color: #fff;
+							font-size: 2rem;
+							font-weight: bold;
+							display: block;
+						}
+
+						&:active {
+							a {
+								color: #333;
+							}
+							background-color: #f3f3f3;
+						}
+
+						@media only screen and (min-width: 600px) {
+							&:hover {
+								a {
+									color: #333;
+								}
+								background-color: #f3f3f3;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
-	@media only screen and (max-width: 968px) {
+	@media only screen and (max-width: 600px) {
 		.header-content {
 			padding: 15px;
 		}
@@ -31,75 +103,26 @@
 			color: var(--text-yellow);
 		}
 	}
+}
 
-	.dropdown-menu {
-		button {
-			display: none;
-			background-color: transparent;
-			width: 30px;
-			height: 30px;
+#menu-toggle:checked {
+	& ~ nav {
+		transform: translateX(0);
+		padding: 15px 0;
+
+		.botao-toggle {
+			opacity: 1;
+			color: red;
 			font-size: 2rem;
+			padding-right: 15px;
 		}
 
-		.menu-content {
-			ul {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-
-				li a {
-					padding: 15px;
-					width: 100%;
-					text-align: center;
-					color: var(--text-color);
-					font-size: 1rem;
-					transition: background-color 0.1s ease;
-
-					&:hover {
-						background-color: var(--background-calm);
-					}
-
-					&:active {
-						background-color: #fafafa;
-					}
-				}
-			}
+		ul li {
+			opacity: 1;
 		}
+	}
 
-		@media only screen and (max-width: 968px) {
-			position: relative;
-			display: inline-block;
-
-			button {
-				display: inline-block;
-			}
-
-			.menu-content {
-				display: none;
-				opacity: 0;
-				position: absolute;
-				min-width: 160px;
-				box-shadow: var(--shadow-1);
-				right: 0;
-				background-color: var(--background-color);
-				transition: opacity 0.2s ease-in-out;
-
-				ul {
-					display: flex;
-					flex-direction: column;
-
-					li {
-						width: 100%;
-						display: flex;
-						justify-content: center;
-					}
-				}
-			}
-
-			&:hover .menu-content {
-				opacity: 100%;
-				display: block;
-			}
-		}
+	& + label.botao-toggle {
+		opacity: 0;
 	}
 }
