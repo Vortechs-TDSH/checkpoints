@@ -130,11 +130,7 @@ ul {
 	color: var(--text-white-color);
 	padding: 12px 16px;
 	border-radius: 6px;
-	&:focus {
-		transition: background-color 0.1s;
-		background-color: var(--button-background-focus);
-	}
-	&:hover {
+	&:active {
 		transition: background-color 0.1s;
 		background-color: var(--button-background-focus);
 	}
@@ -159,4 +155,21 @@ main {
 			padding: 15px;
 		}
 	}
+}
+
+input {
+	height: 40px;
+	padding: 20px 10px;
+}
+
+input,
+textarea {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	border: solid 2px #f59700;
+	margin-bottom: 15px;
+	border-radius: 6px;
+}
+
+textarea {
+	padding: 10px;
 }
