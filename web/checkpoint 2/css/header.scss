@@ -63,18 +63,12 @@
 						}
 
 						&:active {
-							a {
-								color: #333;
-							}
 							background-color: #f3f3f3;
 						}
 
 						@media only screen and (min-width: 600px) {
-							&:hover {
-								a {
-									color: #333;
-								}
-								background-color: #f3f3f3;
+							&:hover a {
+								background-color: #727ff9;
 							}
 						}
 					}
@@ -100,7 +94,7 @@
 
 		h3 {
 			font-weight: 500;
-			color: var(--text-yellow);
+			color: #727ff9;
 		}
 	}
 }
@@ -112,7 +106,7 @@
 
 		.botao-toggle {
 			opacity: 1;
-			color: red;
+			color: #fff;
 			font-size: 2rem;
 			padding-right: 15px;
 		}
