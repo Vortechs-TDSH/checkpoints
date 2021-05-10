@@ -77,11 +77,11 @@
 	justify-content: center;
 	.container {
 		max-width: 1280px;
-		margin: 30px;
+		padding: 15px;
 	}
 	.servico-info {
 		display: flex;
-		margin: 30px 0;
+		padding: 50px 0;
 		justify-content: space-between;
 		.container-img {
 			display: flex;
@@ -95,7 +95,7 @@
 			flex-basis: 30%;
 			flex-direction: column;
 			.descricao {
-				margin: 15px 0;
+				padding: 15px 0;
 			}
 			.container-detalhes {
 				border: 2px solid black;
