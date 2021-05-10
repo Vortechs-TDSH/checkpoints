@@ -5,12 +5,10 @@
 	align-items: stretch;
 	justify-content: center;
 	flex-direction: column;
-
 	.title {
 		font-size: 1.8rem;
 		margin-bottom: 20px;
 	}
-
 	.container-quarto {
 		display: flex;
 		justify-content: space-between;
@@ -71,6 +69,74 @@
 	}
 	@media only screen and (max-width: 968px) {
 		width: 80%;
+	}
+}
+
+#servicos {
+	display: flex;
+	justify-content: center;
+	.container {
+		max-width: 1280px;
+		padding: 15px;
+	}
+	.servico-info {
+		display: flex;
+		padding: 50px 0;
+		justify-content: space-between;
+		.container-img {
+			display: flex;
+			flex-basis: 65%;
+			img {
+				width: 100%;
+			}
+		}
+		.servico {
+			display: flex;
+			flex-basis: 30%;
+			flex-direction: column;
+			.descricao {
+				padding: 15px 0;
+			}
+			.container-detalhes {
+				border: 2px solid black;
+				.container-preco {
+					display: flex;
+					justify-content: space-between;
+					h3,
+					button {
+						display: flex;
+						flex-basis: 50%;
+						justify-content: center;
+						align-items: center;
+						padding: 10px 0;
+					}
+					h3 {
+						border-bottom: 2px solid black;
+						border-right: 2px solid black;
+					}
+					button {
+						border-bottom: 2px solid black;
+						border-radius: 0;
+					}
+				}
+				.lista {
+					padding: 15px;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 1024px) {
+		:nth-child(even) {
+			flex-direction: column-reverse;
+		}
+		:nth-child(odd) {
+			flex-direction: column;
+		}
+		.servico-info {
+			.servico {
+				margin-top: 15px;
+			}
+		}
 	}
 }
 
