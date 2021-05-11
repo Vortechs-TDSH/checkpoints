@@ -64,10 +64,10 @@
 
 	@media only screen and (max-width: 1236px) {
 		:nth-child(even) {
-			flex-direction: column-reverse;
+			flex-direction: column;
 		}
 		:nth-child(odd) {
-			flex-direction: column;
+			flex-direction: column-reverse;
 		}
 
 		.servico-info {
