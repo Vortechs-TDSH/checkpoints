@@ -27,6 +27,7 @@ html {
 * {
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 	scrollbar-color: rgba(1, 1, 1, 0.3);
 	scrollbar-width: 7px;
 	&::-webkit-scrollbar {
@@ -154,13 +155,14 @@ main {
 
 		.titulo {
 			font-weight: 600;
-			color: var(--titulo-color);
+			color: #727ff9;
 		}
 
 		p {
 			margin: 15px 0;
 			font-size: 1rem;
 			font-weight: 500;
+			color: var(--text-color);
 		}
 
 		@media only screen and (max-width: 600px) {
@@ -179,7 +181,7 @@ textarea {
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	border: solid 2px #f59700;
 	margin-bottom: 15px;
-	border-radius: 6px;
+	border-radius: 10px;
 }
 
 textarea {

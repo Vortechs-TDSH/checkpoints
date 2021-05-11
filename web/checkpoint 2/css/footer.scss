@@ -1,14 +1,14 @@
 footer {
-	box-shadow: 3px 0 5px #d3d3d3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #362526;
+	background-color: #eff1fe;
+	border: 1px solid #cdd3fd;
 
 	.footer-content {
 		padding: 50px;
-		color: #e7e7e7;
+		color: #22103f;
 		display: flex;
 		flex-direction: column;
 		line-height: 1.5;
@@ -17,12 +17,9 @@ footer {
 			line-height: 2.5;
 		}
 
-		a {
-			color: #e7e7e7;
-			&:hover {
-				transition: color 0.2s;
-				color: #f6ab4a;
-			}
+		a:hover {
+			transition: color 0.2s;
+			color: #f6ab4a;
 		}
 
 		.social-container {
@@ -47,7 +44,8 @@ footer {
 		display: flex;
 		justify-content: center;
 		font-weight: 500;
-		color: #e7e7e7;
-		background-color: #291c1d;
+		border: 1px solid #cdd3fd;
+		color: #727ff9;
+		background-color: #fff;
 	}
 }
