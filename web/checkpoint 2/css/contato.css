@@ -1,0 +1,92 @@
+#contato {
+  width: 100%;
+  background: url("../img/bg-praia-ponte.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contato .container-contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 60px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: solid 1px;
+  padding: 40px 25px;
+}
+
+#contato .container-contato .titulo {
+  text-align: center;
+  font-weight: bold;
+}
+
+#contato .container-contato .sub-titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contato .container-contato .formulario-contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contato .container-contato .formulario-contato label,
+#contato .container-contato .formulario-contato input,
+#contato .container-contato .formulario-contato textarea {
+  width: 100%;
+}
+
+#contato .container-contato .formulario-contato input {
+  height: 35px;
+}
+
+#contato .container-contato .formulario-contato .contained-button {
+  margin-top: 20px;
+  padding: 18px;
+  width: 100%;
+  font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #contato .container-contato {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contato {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #contato .container-contato {
+    margin: 0;
+    width: 100%;
+  }
+  #contato .container-contato .sub-titulo h2 {
+    font-size: 1rem;
+  }
+}

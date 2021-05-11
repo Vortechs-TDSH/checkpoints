@@ -1,0 +1,95 @@
+#quartos {
+  margin: 30px auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#quartos .title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#quartos .container-quarto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px 0;
+  padding-bottom: 15px;
+  border-bottom: solid 1px;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+#quartos .container-quarto .quarto-image {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+#quartos .container-quarto img {
+  width: 100%;
+}
+
+#quartos .container-quarto .quarto-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+#quartos .container-quarto .quarto-preco {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#quartos .container-quarto .quarto-preco .promo {
+  text-decoration: line-through;
+}
+
+#quartos .container-quarto .quarto-preco .novo-valor {
+  color: red;
+}
+
+#quartos .container-quarto .quarto-preco .comprar {
+  padding: 10px;
+  background-color: #94b0da;
+}
+
+#quartos .container-quarto .quarto-preco p :nth-child(n + 1) {
+  font-size: 2rem;
+}
